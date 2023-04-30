@@ -1,4 +1,6 @@
 # cqdm
+![exmaple of usage](/cqdm.gif)
+
 tqdm styled progress bar for C
 
 # Usage
