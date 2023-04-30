@@ -1,5 +1,5 @@
-#ifndef CQDM.H
-# define CQDM.H
+#ifndef CQDM_H
+# define CQDM_H
 
 # include <stdio.h>
 # include <sys/time.h>
@@ -16,6 +16,6 @@ typedef struct	s_cqdm
 	double	total_time;
 }				t_cqdm;
 
-t_cqdm	create_progress(int total, int size);
-void	update_progress(t_cqdm	*progress, int x);
+t_cqdm	create_cqdm(int total, int size);
+void	update_cqdm(t_cqdm *progress, int x);
 #endif

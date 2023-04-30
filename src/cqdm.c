@@ -10,7 +10,7 @@ long long	get_msec_now()
 	return	(long long)time.tv_sec * 1000LL + (long long)time.tv_usec / 1000LL;
 }
 
-t_cqdm	create_progress(int total, int size)
+t_cqdm	create_cqdm(int total, int size)
 {
 	t_cqdm	cqdm;
 
@@ -23,7 +23,7 @@ t_cqdm	create_progress(int total, int size)
 	return (cqdm);
 }
 
-void	update_progress(t_cqdm	*cqdm, int x)
+void	update_cqdm(t_cqdm *cqdm, int x)
 {
 	long long	now;
 	double		temp;
